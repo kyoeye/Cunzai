@@ -8,6 +8,8 @@ namespace Cunzai.Model
 {
     class MainList
     {
+        //ID
+        public int ID { get; set; }
         //标题
         public string Title { get; set; }
         //时间

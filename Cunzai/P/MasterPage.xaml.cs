@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cunzai.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,27 @@ namespace Cunzai.P
         public MasterPage()
         {
             this.InitializeComponent();
+            mainlistsetcontent();
+        }
+
+         List<MainList> MainLists;
+        public void mainlistsetcontent()
+        {
+            int a;
+            MainLists = new List<MainList>();
+            for (a = 0; a<20; a++)
+            {
+                MainLists.Add(new MainList { ID = a });
+            }
+            //return MainLists;
+        }
+ 
+        private void Picturegrid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            //看下demo的源码
+            var  boxs = sender as StackPanel ;
+            var box = boxs.DataContext as MainList;
+            MainPage.Current.DetailFrame.Navigate(typeof(BETApage),box.ID);
         }
     }
 }

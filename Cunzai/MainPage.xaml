@@ -83,7 +83,10 @@
             <ColumnDefinition x:Name="MasterColumn" Width="500" />
             <ColumnDefinition x:Name="DetailColumn" Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid HorizontalAlignment="Left" Background="#FFE0E0E0">
+        <Grid
+            Width="49"
+            HorizontalAlignment="Left"
+            Background="#FFE0E0E0">
             <ListBox
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
@@ -95,7 +98,7 @@
                         Opacity="0.8" />
                 </ListBoxItem>
             </ListBox>
-            <Grid Height="50" VerticalAlignment="Bottom">
+            <Grid VerticalAlignment="Bottom">
                 <AppBarButton
                     Name="SettingButton"
                     Width="{Binding ElementName=Mymenu, Path=OpenPaneLength, Mode=OneWay}"
