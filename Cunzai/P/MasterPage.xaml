@@ -16,7 +16,7 @@
             <Border Background="#FFF0F0F0" />
             <TextBlock
                 Margin="20,0,0,0"
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontSize="20"
                 Text="存在" />

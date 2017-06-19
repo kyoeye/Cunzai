@@ -83,7 +83,7 @@
             <ColumnDefinition x:Name="MasterColumn" Width="500" />
             <ColumnDefinition x:Name="DetailColumn" Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid HorizontalAlignment="Left" Background="#FFF0F0F0">
+        <Grid HorizontalAlignment="Left" Background="#FFE0E0E0">
             <ListBox
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
@@ -120,10 +120,10 @@
             <VisualStateGroup x:Name="AdaptiveStates" CurrentStateChanged="AdaptiveStates_CurrentStateChanged">
                 <VisualState x:Name="DefaultState">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="520" />
+                        <AdaptiveTrigger MinWindowWidth="600" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="MasterColumn.Width" Value="340" />
+                        <Setter Target="MasterColumn.Width" Value="450" />
                         <Setter Target="DetailColumn.Width" Value="*" />
                         <Setter Target="DetailFrame.(Grid.Column)" Value="2" />
                     </VisualState.Setters>

@@ -8,11 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="#FFF43E6C">
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontSize="22"
-            Foreground="White"
-            Text="记录你所创造的价值" />
+        <Viewbox MaxWidth="200" Margin="20">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="22"
+                Foreground="White"
+                Text="记录你所创造的价值" />
+
+        </Viewbox>
     </Grid>
 </Page>
